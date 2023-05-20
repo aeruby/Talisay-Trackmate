@@ -1,0 +1,168 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0-windows7.0": {
+      "Krypton/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40-Client/Krypton.dll": {}
+        },
+        "runtime": {
+          "lib/net40-Client/Krypton.dll": {}
+        }
+      },
+      "Krypton.Toolkit/70.22.11.312": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows7.0/Krypton.Toolkit.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/Krypton.Toolkit.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WindowsForms"
+        ]
+      }
+    }
+  },
+  "libraries": {
+    "Krypton/2.0.0": {
+      "sha512": "sRGtV0Rs3eU7dxxjzvgh68kwuWgFSF5ZRMrw5fTYW02j3zRGqVjKbgBW68KdmvlwRQLXZQ1OofuvoW717rCHGQ==",
+      "type": "package",
+      "path": "krypton/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "KryptonEffect.fx",
+        "krypton.2.0.0.nupkg.sha512",
+        "krypton.nuspec",
+        "lib/net40-Client/Krypton.dll"
+      ]
+    },
+    "Krypton.Toolkit/70.22.11.312": {
+      "sha512": "0IumXFg5+4RivvUs5oLLJWayUoPwu7QT8GIdGJYkZkuzwJ4D/JdwDNFYkPGFseY58wxhfErV8f+n0/SF6SGUTw==",
+      "type": "package",
+      "path": "krypton.toolkit/70.22.11.312",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Krypton Stable.png",
+        "krypton.toolkit.70.22.11.312.nupkg.sha512",
+        "krypton.toolkit.nuspec",
+        "lib/net462/Krypton.Toolkit.dll",
+        "lib/net462/Krypton.Toolkit.xml",
+        "lib/net47/Krypton.Toolkit.dll",
+        "lib/net47/Krypton.Toolkit.xml",
+        "lib/net471/Krypton.Toolkit.dll",
+        "lib/net471/Krypton.Toolkit.xml",
+        "lib/net472/Krypton.Toolkit.dll",
+        "lib/net472/Krypton.Toolkit.xml",
+        "lib/net48/Krypton.Toolkit.dll",
+        "lib/net48/Krypton.Toolkit.xml",
+        "lib/net481/Krypton.Toolkit.dll",
+        "lib/net481/Krypton.Toolkit.xml",
+        "lib/net5.0-windows7.0/Krypton.Toolkit.dll",
+        "lib/net5.0-windows7.0/Krypton.Toolkit.xml",
+        "lib/net6.0-windows7.0/Krypton.Toolkit.dll",
+        "lib/net6.0-windows7.0/Krypton.Toolkit.xml",
+        "lib/net7.0-windows7.0/Krypton.Toolkit.dll",
+        "lib/net7.0-windows7.0/Krypton.Toolkit.xml",
+        "lib/netcoreapp3.1/Krypton.Toolkit.dll",
+        "lib/netcoreapp3.1/Krypton.Toolkit.xml"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0-windows7.0": [
+      "Krypton >= 2.0.0",
+      "Krypton.Toolkit >= 70.22.11.312"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\USER\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\USER\\Downloads\\Talisay Tracker\\Talisay Tracker\\Talisay Tracker.csproj",
+      "projectName": "Talisay Tracker",
+      "projectPath": "C:\\Users\\USER\\Downloads\\Talisay Tracker\\Talisay Tracker\\Talisay Tracker.csproj",
+      "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\USER\\Downloads\\Talisay Tracker\\Talisay Tracker\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0-windows"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0-windows7.0": {
+        "targetAlias": "net6.0-windows",
+        "dependencies": {
+          "Krypton": {
+            "target": "Package",
+            "version": "[2.0.0, )"
+          },
+          "Krypton.Toolkit": {
+            "target": "Package",
+            "version": "[70.22.11.312, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WindowsForms": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Krypton 2.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Krypton",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
+}
